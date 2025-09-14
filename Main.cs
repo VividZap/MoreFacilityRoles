@@ -3,6 +3,9 @@ using Exiled.API.Features;
 using Exiled.CustomRoles.API;
 using Exiled.CustomRoles.API.Features;
 using MoreFacilityRoles.Roles;
+using MoreFacilityRoles.Roles.Chaos;
+using MoreFacilityRoles.Roles.MTF;
+using MoreFacilityRoles.Roles.SCP049_2;
 
 namespace MoreFacilityRoles
 {
@@ -16,7 +19,13 @@ namespace MoreFacilityRoles
         
         public override void OnEnabled()
         {
+            new BigBoy().Register();
+            new Medic().Register();
+            new OwO().Register();
+            new Rombo().Register();
             new Doctor().Register();
+            new Crazy().Register();
+            new Combo().Register();
             new DrX().Register();
             new GuardSupporter().Register();
             new Kid().Register();

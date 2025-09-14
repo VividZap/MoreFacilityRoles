@@ -3,6 +3,9 @@ using System.ComponentModel;
 using Exiled.API.Interfaces;
 using LiteNetLib4Mirror.Open.Nat;
 using MoreFacilityRoles.Roles;
+using MoreFacilityRoles.Roles.Chaos;
+using MoreFacilityRoles.Roles.MTF;
+using MoreFacilityRoles.Roles.SCP049_2;
 
 namespace MoreFacilityRoles
 {
@@ -24,7 +27,29 @@ namespace MoreFacilityRoles
         
         public Janitor JanitorRole { get; set; } = new();
         
+        public Crazy crazy { get; set; } = new();
+        
+        public Combo Combo { get; set; } = new();
+        
+        public Medic medic { get; set; } = new();
+        
+        public BigBoy bigboy { get; set; } = new();
+        
+        public OwO owo { get; set; } = new();
+        
+        public Rombo rombo { get; set; } = new();
+        
         public List<Doctor> doctor { get; set; } = new();
+        
+        public List<Medic> medical { get; set; } = new();
+        
+        public List<BigBoy> bigboyrole { get; set; } = new();
+        
+        public List<OwO> OwO { get; set; } = new();
+        
+        public List<Combo>  combo { get; set; } = new();
+        
+        public List<Crazy> Crazy { get; set; } = new();
         
         public List<DrX> drX { get; set; } = new();
         
@@ -39,6 +64,9 @@ namespace MoreFacilityRoles
         [Description("Hints")]
         
         public string Janitor { get; set; } = "";
+        
+        [Description("Settings Roles")]
+        public float Stamina { get; set; } = 100000f;
         
         
     }
