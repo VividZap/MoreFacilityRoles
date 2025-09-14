@@ -42,7 +42,7 @@ public class DrX : CustomRole
     public override void AddRole(Player player)
     {
         player.EnableEffect(EffectType.Scp1344);
-        Log.Info("Adding DrX role");
+        Log.Info($"Adding {Name}");
         base.AddRole(player);
     }
 }
